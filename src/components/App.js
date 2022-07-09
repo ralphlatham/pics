@@ -12,6 +12,7 @@ import SearchBar from './SearchBar';
 
 // Class component
 class App extends React.Component {
+    // This callback is going to the SearchBar.js file
     onSearchSubmit(term) {
         console.log(term);
     };
