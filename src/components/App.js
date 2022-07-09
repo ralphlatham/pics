@@ -12,7 +12,7 @@ import SearchBar from './SearchBar';
 
 // Class component
 class App extends React.Component {
-    // This callback is going to the SearchBar.js file
+    // This function is going to the SearchBar.js file
     onSearchSubmit(term) {
         console.log(term);
     };
@@ -22,6 +22,7 @@ class App extends React.Component {
             <div className="ui container" style={{ marginTop: '10px' }}>
                 {/*When you pass in a callback to a component you don't have to use names*/}
                 {/*like onSubmit like you have to with JSX elements in the SearchBar.js file*/}
+                {/*This callback is going to the SearchBar.js file*/}
                 <SearchBar customOnSubmit={this.onSearchSubmit}/>
             </div>
         );

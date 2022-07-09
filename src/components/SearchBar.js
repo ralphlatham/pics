@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
 
         /*console.log(this.state.term);*/
 
-        // This callback is coming from the App.js file
+        // This function is coming from the App.js file
         this.props.customOnSubmit(this.state.term);
     };
 
