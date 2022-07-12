@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import SearchBar from './SearchBar';
 
 // Functional component
@@ -14,7 +15,12 @@ import SearchBar from './SearchBar';
 class App extends React.Component {
     // This function is going to the SearchBar.js file
     onSearchSubmit(term) {
-        console.log(term);
+        axios.get('https://api.unsplash.com/search/photos', {
+            params: { query: term },
+            headers: {
+                Authorization: 'Client-ID ZF1ScyX_cqnpNAuYuqLYjHdIKyPFeI9wYbBMUp7PckM'
+            }
+        });
     };
 
     render() {
