@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
     // This commented out line of code below will throw an undefined error as 'this' does not exist
     // To fix it we can use a constructor and a 'bind' function (no example included here sorry)
     // Alternatively, we can change it into an arrow function like the commented out line below
+    // working in conjunction with the commented out form element further down.
     // Another solution is to change the onFormSubmit function in the form JSX
     // element into an arrow function (look at the code in the render() function
     // to see this solution)
