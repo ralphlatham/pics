@@ -5,6 +5,7 @@ import React from 'react';
 //import axios from 'axios';
 import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
+import ImageList from './ImageList';
 
 // Functional component
 //const App = () => {
@@ -60,7 +61,8 @@ class App extends React.Component {
                 {/*implemented in the onSearchSubmit function further up the page*/}
                 {/*<SearchBar customOnSubmit={(term) => this.onSearchSubmit(term)} />*/}
                 <SearchBar customOnSubmit={this.onSearchSubmit} />
-                Found: {this.state.images.length} images
+                {/*Found: {this.state.images.length} images*/}
+                <ImageList images={this.state.images}/>
             </div>
         );
     };
